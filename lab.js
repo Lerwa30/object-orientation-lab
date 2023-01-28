@@ -80,7 +80,7 @@ favoriteThings.show = 'Breaking Bad'
 
 favoriteThings.book = 'Harry Potter'
 favoriteThings.food = "Chicken Nuggets"
-console.log(favoriteThings)
+
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -99,6 +99,7 @@ var carDetails = {
 
 //Code Here
 
+let {color, make, model, year} = carDetails
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -111,6 +112,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
+  let {firstName, lastName, title} = obj
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -131,6 +133,11 @@ function greeting( obj ) {
 
 //Code Here
 
+const totalPopulation = (obj) => {
+  let {utah, california, texas, arizona} = obj
+  return utah + california + texas + arizona
+}
+
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
@@ -144,6 +151,18 @@ function greeting( obj ) {
 */
 
 //Code Here
+
+let food = {
+  carb: 'bread',
+  fat: 'butter',
+  protein: 'beef'
+}
+const ingredients = (obj) => {
+  let {carb, fat, protein} = obj
+  let arr = []
+  arr.push(carb, fat, protein)
+  return arr
+}
 
 
 
@@ -166,6 +185,11 @@ var user = {
 */
 
 //Code Here
+
+user.name = 'Bryan G. Smith'
+user.email = 'bryan.smith@devmounta.in'
+
+console.log(user)
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
